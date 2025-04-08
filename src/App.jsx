@@ -2,6 +2,9 @@ import { useState } from 'react'
 import './App.css'
 import SnakeGame from './components/SnakeGame'
 import CoinCollector3D from './components/CoinCollector3D'
+import profileImage from './assets/images/pic1.png'
+import dogpigImage from './assets/images/dogpig.png'
+import pic2Image from './assets/images/pic2.png'
 
 function App() {
   const [activeTab, setActiveTab] = useState('about')
@@ -11,7 +14,7 @@ function App() {
       <header className="header">
         <div className="profile">
           <div className="profile-image">
-            <img src="/src/assets/images/pic1.png" alt="Profile" />
+            <img src={profileImage} alt="Profile" />
           </div>
           <h1>王妤</h1>
           <p>網頁開發者 / 設計師</p>
@@ -104,7 +107,7 @@ function App() {
             <div className="project-grid">
               <div className="project-card">
                 <div className="project-image">
-                  <img src="src\assets\images\dogpig.png" alt="項目預覽" />
+                  <img src={dogpigImage} alt="項目預覽" />
                 </div>
                 <h3>電商平台</h3>
                 <p>使用React和Node.js開發的完整電子商務解決方案。</p>
@@ -115,7 +118,7 @@ function App() {
               </div>
               <div className="project-card">
                 <div className="project-image">
-                  <img src="src\assets\images\pic2.png" alt="項目預覽" />
+                  <img src={pic2Image} alt="項目預覽" />
                 </div>
                 <h3>社交媒體應用</h3>
                 <p>一個允許用戶分享內容的社交網絡應用。</p>
